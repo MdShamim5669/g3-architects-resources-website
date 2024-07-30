@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Shared styles */
+.display-flex{
+    display: flex;
+}
+/* dark 02 */
+.text-gray{
+    color: #424242;
+}
+/* Dark 03 */
+.text-light-gray{
+    color: #727272;
+}
+.text-primary{
+    color:  #FF900E;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.section-title{
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 21px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+/* Header styles */
+
+/* navbar stykes */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.nav-item{
+    list-style: none;
+    margin-left: 30px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Banner related style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.banner-image{
+    width: 100%;
+}
+/* team and features related styles */
+.teams{
+    align-items: center;
+}
+.team-image-container{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+}
+.our-feature{
+    margin-left: 130px;
+    max-width: 537px;
+}
+
+#Quick-list{
+    font-weight: 500;
+}
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .nav-link,
+    .teams{
+        flex-direction: column;
+    }  
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }  
+    .our-feature{
+        margin-left: 20px;
+    }
+}
+/* Medimu size devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }  
+    .our-feature{
+        margin: 50px auto;
+    }  
+
+}
